@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+@import "./styles/reset";
+@import "./styles/variables";
+@import "./styles/mixins";
+
+#root {
+    max-width: 1440px;
+    min-width: 400px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 12px 24px 0px;
+}
