@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.features {
+    &-section {
+        @include flex-box__row;
+        justify-content: space-around;
+        margin: 6.625rem auto 7rem;
+        max-width: 1200px;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__name {
+        margin: 1.75rem 0px 0px;
+        font-size: 25px;
+    }
+}

@@ -2,6 +2,7 @@
 * {
     font-family: Inter, Tahoma;
 }
+
 html, body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -11,6 +12,8 @@ html, body {
     min-height: 100%;
     width: 100%;
     margin: 0px;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 body {
@@ -39,12 +42,13 @@ img {
 }
 
 textarea, input {
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    border-radius: 0;
+    background-color: $colorTextWhite;
+    border: 1px solid $colorTextGray;
     box-sizing: border-box;
     display: block;
     padding: 0 ;
+    outline: none;
+    font-size: 1rem;
 }
 
 input:not([type=checkbox]):not([type=radio]), textarea, select {
@@ -54,23 +58,22 @@ input:not([type=checkbox]):not([type=radio]), textarea, select {
 }
 
 *::-moz-placeholder {
-    color: #15222e;
-    font-size: 0.8rem;
+    color: $colorPlaceholderDefault;
+    font-size: 1rem;
 }
 
 *::-webkit-input-placeholder {
-    color: #15222e;
-    font-size: 0.8rem;
+    color: $colorPlaceholderDefault;
+    font-size: 1rem;
 }
 
 *:-ms-input-placeholder {
-    color: #15222e;
-    font-size: 0.8rem;
+    color: $colorPlaceholderDefault;
+    font-size: 1rem;
 }
 
 input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
-    height: 37px;
-    line-height: 2.1;
+    line-height: 1.1;
 }
 
 input[type="text"].error_field, input[type="password"].error_field, input[type="email"].error_field {

@@ -1,0 +1,46 @@
+.footer {
+    &-section {
+        background-color: $colorText;
+        padding: 2.25rem 1.5rem 0.75rem;
+
+        .subscribe-section {
+            max-width: 466px;
+        }
+    }
+
+    &__copyright {
+        color: $colorTextGray;
+        margin: 1.5rem 0px 0px;
+        text-align: center;
+    }
+
+    &__menu-title {
+        color: $colorTextGray;
+        font-size: 1.25rem;
+        margin: 0px 0px 1.25rem;
+        line-height: 1.2;
+    }
+
+    &__menu-sections {
+        @include flex-box__row;
+        justify-content: space-between; 
+        
+        a {
+            color: $colorTextWhite;
+        }
+    }
+
+    &__menu-list {
+        & > li {
+            margin-top: 0.25rem;
+        }
+        
+        & > li:first-child {
+            margin-top: 0px;
+        }
+    }
+
+    &__menu-block .phone-section {
+        margin: 0.75rem 0px 0px;   
+   }
+}

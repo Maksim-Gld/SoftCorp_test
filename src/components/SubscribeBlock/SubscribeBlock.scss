@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.subscribe-section {
+    &__title {
+        color: $colorTextGray;
+        margin: 0px 0px 1.3rem;
+    }
+}
+
+.subscribe__form {
+    @include border-radius-mid;
+    @include flex-box__row;
+    justify-content: space-between;
+    background-color: $backgroundDark;
+    border: 3px solid $backgroundDark;
+    margin: 0px 0px 2.9rem;
+
+    input[type="email"],input[type="text"] {
+       background: transparent;
+       border: 0px;
+       color: $colorTextWhite;
+       padding: 1rem 0.5rem 1.1rem;
+       box-sizing: border-box;
+       height: 51px;
+       width: 100%;
+
+       &::placeholder {
+        color: $colorPlaceholder;
+       }
+
+       &:hover {
+        border: 0px;
+       }
+
+       &:focus {
+        border: 0px;
+       }
+    }
+}

@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.phone-section {
+    @include flex-box__row;
+    &__ico {
+        margin: 0px 0.45rem 0px 0px;
+
+        & img {
+            max-height: 18px;
+        }
+    }
+
+    &__link a {
+        @include animation-link;
+        @include border-bottom-link;
+    }
+
+    &__link a:hover {
+        text-decoration: none;
+    }
+}
