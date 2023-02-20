@@ -2,33 +2,48 @@
 @import "./styles/variables";
 @import "./styles/reset";
 @import "./styles/mixins";
+@import "Layout/Header/Header.scss";
 @import "Layout/Footer/Footer.scss";
+
+.App {
+    min-height: 100vh;
+}
 
 #root {
     max-width: 1440px;
     min-width: 400px;
+    min-height: 100vh;
     margin: 0px auto;
     box-sizing: border-box;
     padding: 0.75rem 1.5rem 0px;
 }
 
-.button-blue {
-    background-color: $colorLinkBlue;
-    color: $colorTextWhite;
-    text-align: center;
-    font-weight: bold;
-    border: 0px;
-    cursor: pointer;
-    -webkit-transition: color .3s linear;
-    -moz-transition: color .3s linear;
-    -o-transition: color .3s linear;
-    transition: color .3s linear;
-
-    &:hover {
-        background-color: $colorLinkBlueHover;
+.button {
+    &-lnk {
+        @include border-radius-mid;
+        @include animation-link;
+        text-align: center;
+        font-weight: bold;
+        border: 0px;
+        display: inline-block;
+        box-sizing: border-box;
+        cursor: pointer;
+        padding: 1.2rem 2rem; 
     }
+
+    &-blue {
+        background-color: $colorLinkBlue;
+        color: $colorTextWhite;  
+    
+        &:hover {
+            background-color: $colorLinkBlueHover;
+            text-decoration: none;
+        }
+    }
+
     &__small {
         @include border-radius-mid;
+        @include animation-link;
         padding: 1rem 2.1rem;
     }
 }

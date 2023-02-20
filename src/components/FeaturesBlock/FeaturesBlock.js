@@ -2,7 +2,7 @@ import React from 'react';
 import './FeaturesBlock.scss'
 import icoCatalog from '../../assets/ico_catalog.svg'
 import icoSupport from '../../assets/ico_support.svg'
-import icoIdeas from '../../assets/ico_ideas.svg'
+import icoIdeas from '../../assets/ico_ideas.png'
 
 const FeaturesBlock = () => {
     return (

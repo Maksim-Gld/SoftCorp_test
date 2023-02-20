@@ -1,0 +1,77 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.banner-shop {
+    @include border-radius-xl;
+    border: 1px solid #E2E0DF;
+    background-position: right center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+
+
+    &__row {
+        margin: 2.5rem 0px 0px;
+        
+        &:first-child {
+            margin: 0px;
+        }
+    }
+
+    &__image {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__content {
+        @include flex-box__column;
+        justify-content: center;
+        color: $colorText;
+        text-align: left;
+        line-height: 1;
+        background-color: $colorTextWhite;
+        padding: 4rem 4.65rem;
+        box-sizing: border-box;
+        position: relative;
+        max-width: 750px;
+
+        @media (min-width:1000px) {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;;
+            height: 100%;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: -50%;
+            width: 50%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(90deg, #FFFFFF 7.65%, rgba(255, 255, 255, 0.92) 23.96%, rgba(255, 255, 255, 0) 73.83%);
+        }
+    }
+
+    &__title {
+        font-size: 35px;
+        line-height: 1.2;
+        font-weight: bold;
+    }
+
+    &__info {
+        font-size: 22px;
+        line-height: 1.25;
+    }
+
+    .button-lnk {
+        max-width: 320px;
+        width: 100%;
+        font-size: 22px;
+        line-height: 1.1;
+    }
+}

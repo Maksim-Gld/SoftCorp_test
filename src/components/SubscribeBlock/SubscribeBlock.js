@@ -9,7 +9,7 @@ const subscribeBlock = () => {
             <form action='' method=''>
                 <div className='subscribe__form'>
                     <input type={'email'} placeholder="Your email"></input>
-                    <input className='button-blue button-blue__small' type="submit" value="Subscribe" />
+                    <input className='button__small button-blue' type="submit" value="Subscribe" />
                 </div>
             </form>
             <div className='payment'>
