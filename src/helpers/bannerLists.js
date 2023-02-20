@@ -1,11 +1,8 @@
 import imgSlider1 from '../assets/products/abrasives.png';
 import imgSlider2 from '../assets/products/electrical.png';
 import imgSlider3 from '../assets/products/welding.png';
-import imgSlider4 from '../assets/products/safety.png';
-import imgSlider5 from '../assets/products/fasteners.png';
-import imgSlider6 from '../assets/products/hands_tools.png';
 
-const products = [
+const slides = [
   {
     id: 0,
     title: 'Abrasives',
@@ -30,24 +27,6 @@ const products = [
     link: 'urlProduct4',
     imageSlider: imgSlider4,
   },
-  {
-    id: 4,
-    title: 'Fasteners',
-    link: 'urlProduct5',
-    imageSlider: imgSlider5,
-  },
-  {
-    id: 5,
-    title: 'Hand Tools',
-    link: 'urlProduct6',
-    imageSlider: imgSlider6,
-  },
-  {
-    id: 6,
-    title: 'Abrasives Extra',
-    link: 'urlProduct1',
-    imageSlider: imgSlider1,
-  },
 ];
 
-export {products}
+export {slides}

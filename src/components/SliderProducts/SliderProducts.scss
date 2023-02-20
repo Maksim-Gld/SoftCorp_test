@@ -1,0 +1,52 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.slider-products {
+    padding: 4.75rem 0px 6.3rem;
+
+    .slick-arrow {
+        top: -60px;
+        width: 46px;
+        height: 46px;
+        transform: none;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 1;
+            width: 46px;
+            height: 46px;
+            background-color: $backgroundInputGray;
+            background-position: center center;
+            background-repeat: no-repeat;
+            color: $colorText;
+            font-size: 2rem;
+            font-weight: bold;
+            @include border-radius-xxl;
+        }
+
+        &:hover {
+            &:before {
+                background-color: $colorPlaceholder;
+            }
+        }
+    }
+    
+    .slick-prev {
+        left: 175px;
+
+        &:before {
+            background-image: url(../../assets/slider/btn_prev.svg);
+        }
+    }
+
+    .slick-next {
+        left: 230px;
+
+        &:before {
+            background-image: url(../../assets/slider/btn_next.svg);
+        }
+    }
+}

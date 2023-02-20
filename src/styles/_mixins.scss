@@ -13,10 +13,17 @@
     -moz-border-radius: 0.5rem;
     border-radius: 0.5rem;
 }
+
 @mixin border-radius-xl {
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     border-radius: 1rem;
+}
+
+@mixin border-radius-xxl {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 
 @mixin animation-link {
