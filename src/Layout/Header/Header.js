@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchBlock from '../../components/SearchBlock/SearchBlock';
 import PhonebeBlock from '../../components/PhoneBlock/PhoneBlock';
+import NavMenu from '../../components/NavMenu/NavMenu';
 import ico_Logo from '../../assets/logo.svg';
 import ico_Lists from '../../assets/ico_lists.svg';
 import ico_Account from '../../assets/ico_account.svg';
@@ -54,12 +55,12 @@ const Header = () => {
                                 <span className='user-nav__title'>Cart</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul>                    
                 </div>
                 <div className='clr'></div>
             </div>
             <div className='header-section__bottom-lv'>
-                <nav className='header-section__nav'>
+                {/* <nav className='header-section__nav'>
                     <ul className='header-section__main-menu'>
                         <li>
                             <a href="{urlMenu}">Products</a>
@@ -80,7 +81,8 @@ const Header = () => {
                             <a href="{urlMenu}">Support</a>
                         </li>
                     </ul>
-                </nav>
+                </nav> */}
+                <NavMenu />
                 <div className='header-section__phone'>
                     <PhonebeBlock />
                 </div>

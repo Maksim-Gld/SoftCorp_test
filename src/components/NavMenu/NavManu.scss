@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.main-menu {
+    @include flex-box__row;
+    justify-content: flex-start;
+
+    & > li {
+        margin: 0px 0px 0px 1.15rem;
+
+        &:first-child {
+            margin: 0px
+        }
+
+        & > a {
+            @include border-bottom-link(33,33,33,0.5);
+            @include animation-link;
+            font-size: 22px;
+            line-height: 1.2;
+            text-decoration: none;
+        }
+    }
+}

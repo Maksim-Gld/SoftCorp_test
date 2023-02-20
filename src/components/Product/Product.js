@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Product.scss"
 
 const Product = (props) => {
     return (
@@ -10,7 +11,7 @@ const Product = (props) => {
             </div>
             <div className='product__title'>
                 <a href={props.link}>
-                    {props.title}
+                    <b>{props.title}</b>
                 </a>
             </div>
         </div>

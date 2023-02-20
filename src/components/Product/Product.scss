@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.product {
+    &__item {
+        display: inline-block;
+    }
+
+    &__image {
+        @include border-radius-mid;
+        border: 1px solid $backgroundBorder;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    &__title {
+        margin: 0.65rem 0px 0px;
+    }
+}

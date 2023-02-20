@@ -12,12 +12,15 @@ import { products } from '../../helpers/productsList';
 export default class SliderProducts extends Component {
 render() {
     const settings = {
+      className: "center",
+      centerMode: true,
+      centerPadding: "2px",
       dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 6,
+      initialSlide: 3,
       swipeToSlide: true,
-      initialSlide: 0,
       responsive: [
         {
             breakpoint: 1200,
@@ -36,13 +39,13 @@ render() {
           }
         },
         {
-          breakpoint: 800,
+          breakpoint: 860,
           settings: {
             slidesToShow: 3,
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 640,
           settings: {
             slidesToShow: 2,
           }

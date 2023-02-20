@@ -23,10 +23,57 @@
 
     &__menu-sections {
         @include flex-box__row;
+        
         justify-content: space-between; 
         
         a {
             color: $colorTextWhite;
+        }
+
+        @media (max-width:1024px) {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .subscribe-section {
+                margin: 2rem 0px 0px
+            }
+        }
+    }
+
+    &__menu-blocks {
+        @include flex-box__row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 730px;
+
+        @media (max-width:640px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media (max-width:420px) {
+            flex-wrap: nowrap;
+            flex-flow: column;
+            align-items: start;
+        }
+    }
+
+    &__menu-block {
+        margin: 0px 1rem 0px;
+
+        &:first-child {
+            margin-left: 0px;
+        }
+
+        @media (max-width:640px) {
+            margin: 0rem 0.5rem 1.5rem;
+
+            &:first-child {
+                margin-top: 0px;
+            }
+        }
+        @media (max-width:420px) {
+            margin-left: 0px;
         }
     }
 

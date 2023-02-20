@@ -130,4 +130,18 @@
             font-size: 1.35rem;
         }
     }
+
+    @media (max-width:1200px) {
+        &__middle-lv {
+            margin: 0.5rem 0px;
+        }
+
+        &__user-nav {
+            margin: 0.75rem 0px 0px;
+        }
+
+        .search-section {
+            margin: 0px 0px 0px 2rem;
+        }
+    }
 }
