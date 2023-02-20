@@ -2,6 +2,12 @@
     &-section {
         background-color: $colorText;
         padding: 2.25rem 1.5rem 0.75rem;
+        -webkit-border-top-left-radius: 16px;
+        -webkit-border-top-right-radius: 16px;
+        -moz-border-radius-topleft: 16px;
+        -moz-border-radius-topright: 16px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
 
         .subscribe-section {
             max-width: 466px;

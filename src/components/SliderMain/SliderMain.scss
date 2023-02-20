@@ -36,6 +36,26 @@
         &__title {
             font-size: 46px;
         }
+
+        @media (max-width:1000px) {
+            &__content {
+                padding: 2rem;
+            }
+            
+            &__title {
+                font-size: 30px;
+            }
+
+            &__row:first-child {
+                margin: 0px 0px 1.5rem;
+            }
+        }
+
+        @media (max-width:640px) {
+            &__content {
+                padding: 2rem;
+            }
+        }
     }
 
     .slick-dots {

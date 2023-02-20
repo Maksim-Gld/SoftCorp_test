@@ -2,8 +2,14 @@
 @import '../../styles/mixins';
 
 .slider-products {
-    padding: 4.75rem 0px 6.3rem;
+    margin: 4.75rem 0px 6.3rem;
+    position: relative;
 
+    &__title-block {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0px 0px 1.55rem;
+    }
     .slick-arrow {
         top: -60px;
         width: 46px;
@@ -47,6 +53,31 @@
 
         &:before {
             background-image: url(../../assets/slider/btn_next.svg);
+        }
+    }
+
+    .live-chat {
+        position: absolute;
+        right: 0px;
+        top: -8px;
+    }
+
+    @media (max-width:1000px) {
+        & {
+            margin: 3rem 0px 4.5rem;
+        }
+    }
+
+    @media (max-width:1000px) {
+       & {
+            margin: 2rem 0px 3rem;
+        }
+    }
+    
+    @media (max-width:420px) {
+        .product__item {
+            display: block;
+            text-align: center;
         }
     }
 }

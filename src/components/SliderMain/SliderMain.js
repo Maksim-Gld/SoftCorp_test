@@ -22,6 +22,7 @@ render() {
       slidesToShow: 1,
       slidesToScroll: 1,
       swipeToSlide: true,
+      adaptiveHeight: true,
     };
     return (
       <div className='slider-main'>

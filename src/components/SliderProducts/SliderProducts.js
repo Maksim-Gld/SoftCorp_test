@@ -3,6 +3,7 @@ import "slick-carousel";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "./SliderProducts.scss"
+import LiveChatButton from '../LiveChatButton/LiveChatButton';
 import Slider from "react-slick";
 import Product from '../Product/Product';
 import { products } from '../../helpers/productsList';
@@ -14,7 +15,7 @@ render() {
     const settings = {
       className: "center",
       centerMode: true,
-      centerPadding: "2px",
+      centerPadding: "4px",
       dots: false,
       infinite: true,
       speed: 500,
@@ -26,16 +27,12 @@ render() {
             breakpoint: 1200,
             settings: {
               slidesToShow: 5,
-              infinite: true,
-              dots: true
             }
           },
         {
           breakpoint: 1024,
           settings: {
             slidesToShow: 4,
-            infinite: true,
-            dots: true
           }
         },
         {
@@ -60,7 +57,8 @@ render() {
     };
     return (
       <div className='slider-products'>
-        <h2> Categories </h2>
+        <LiveChatButton />
+        <div className='slider-products__title-block'>Categories</div>
         <Slider {...settings}>
              {products.map( (product) => {
                 return <Product 

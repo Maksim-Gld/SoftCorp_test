@@ -21,7 +21,7 @@
     
     &__user-nav {
         float: right;
-        margin: 0.4rem 0px 0px;
+        margin: 0.55rem 0px 0px;
         
         .user-nav {
             &__menu {
@@ -101,26 +101,6 @@
         justify-content: space-between;
         margin: 1.55rem 0px 0px;
     }
-    &__main-menu {
-        @include flex-box__row;
-        justify-content: flex-start;
-
-        & > li {
-            margin: 0px 0px 0px 1.15rem;
-
-            &:first-child {
-                margin: 0px
-            }
-
-            & > a {
-                @include border-bottom-link(33,33,33,0.5);
-                @include animation-link;
-                font-size: 22px;
-                line-height: 1.2;
-                text-decoration: none;
-            }
-        }
-    }
 
     &__phone {
         .phone-section__link a {
@@ -142,6 +122,22 @@
 
         .search-section {
             margin: 0px 0px 0px 2rem;
+        }
+    }
+    @media (max-width:740px) {
+        &__middle-lv {
+            @include flex-box__column;
+        }
+
+        &__user-nav {
+            @include flex-box__row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            float: none;
+        }
+
+        .search-section {
+            margin: 1rem 0px 0.5rem;
         }
     }
 }
