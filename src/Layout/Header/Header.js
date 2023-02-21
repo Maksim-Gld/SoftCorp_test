@@ -60,28 +60,6 @@ const Header = () => {
                 <div className='clr'></div>
             </div>
             <div className='header-section__bottom-lv'>
-                {/* <nav className='header-section__nav'>
-                    <ul className='header-section__main-menu'>
-                        <li>
-                            <a href="{urlMenu}">Products</a>
-                        </li>
-                        <li>
-                            <a href="{urlMenu}">Resources</a>
-                        </li>
-                        <li>
-                            <a href="{urlMenu}">Services</a>
-                        </li>
-                        <li>
-                            <a href="{urlMenu}">Locations</a>
-                        </li>
-                        <li>
-                            <a href="{urlMenu}">Careers</a>
-                        </li>
-                        <li>
-                            <a href="{urlMenu}">Support</a>
-                        </li>
-                    </ul>
-                </nav> */}
                 <NavMenu />
                 <div className='header-section__phone'>
                     <PhonebeBlock />

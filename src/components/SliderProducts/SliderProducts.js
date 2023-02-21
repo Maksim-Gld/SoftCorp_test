@@ -17,10 +17,12 @@ render() {
       centerPadding: "4px",
       dots: false,
       infinite: true,
+      autoplay: true,
       speed: 500,
       slidesToShow: 6,
       initialSlide: 3,
       swipeToSlide: true,
+      pauseOnHover: true,
       responsive: [
         {
             breakpoint: 1200,

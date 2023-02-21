@@ -3,7 +3,6 @@ import "slick-carousel";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "./SliderMain.scss"
-//import "./SliderProducts.scss"
 import Slider from "react-slick";
 import BannerShop from '../BannerShop/BannerShop';
 import { slides } from '../../helpers/bannerLists';
