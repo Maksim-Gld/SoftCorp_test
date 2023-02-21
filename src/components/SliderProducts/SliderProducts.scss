@@ -64,13 +64,17 @@
 
     @media (max-width:1000px) {
         & {
-            margin: 3rem 0px 4.5rem;
+            margin: 5rem 0px 4.5rem;
         }
     }
 
-    @media (max-width:1000px) {
-       & {
-            margin: 2rem 0px 3rem;
+    @media (max-width:640px) {
+        & {
+            margin: 5rem 0px 3rem;
+        }
+
+        .live-chat {
+            top: -67px;
         }
     }
     

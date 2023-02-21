@@ -13,8 +13,7 @@ import { products } from '../../helpers/productsList';
 export default class SliderProducts extends Component {
 render() {
     const settings = {
-      className: "center",
-      centerMode: true,
+      
       centerPadding: "4px",
       dots: false,
       infinite: true,
